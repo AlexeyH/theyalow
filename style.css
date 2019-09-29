@@ -1,17 +1,25 @@
 body {
-  width: 1300px;
+  /* width: 1300px; */
+  width: 100%;
 }
 
-.wrapper {
+h1 {
+  font-size: 0;
+}
+
+.head-wrapper {
+  position: relative;
   height: 566px;
-  background-size: cover;
   color: #fff;
-  background: url(assets/images/header_back.svg);
+  background-image: url(assets/images/header_back.svg);
   background-size: cover;
+  background-repeat: repeat no-repeat;
 }
 
 .header,
-.main,
+.slider,
+.advantages-wrapper,
+.twit,
 .footer {
   display: flex;
   width: 1020px;
@@ -34,21 +42,22 @@ body {
   font-family: 'Segoe UI', Verdana, sans-serif;
   font-style: italic;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-.img {
+.logo-img {
   width: 79px;
   height: 80px;
 }
 
 .logo-back {
-  margin: 0 0 0 2px;
+  margin: 0 0 0 1px;
 }
 
 .logo-front {
-  position:absolute;
+  position: absolute;
   top: -2px;
-  left: -1px;
+  left: -2px;
   width: 85px;
   height: 85px;
 }
@@ -58,13 +67,11 @@ body {
   vertical-align: top;
   margin: 0;
   padding-top: 20px;
-  /* position:absolute;
-  top: calc (50% - 85px); */
 }
 
-.navbar ul {
-  margin: 71px 0px 0 0;
-  padding: 0px 4px 0 21px;
+.nav-list {
+  margin: 71px 1px 0 0;
+  padding: 0px 4px 0 20px;
   display: flex;
   font-size: 17px;
   list-style: none;
@@ -73,15 +80,15 @@ body {
   box-shadow: -4px -5px rgba(245,197,6,.27), -8px -8px rgba(245,197,6,.27);
 }
 
-.navbar ul li {
+.nav-list-item {
   border-left: 1px solid #dcb105;
 }
 
-.navbar ul li:first-child {
+.nav-list-item:first-child {
   border: none;
 }
 
-.navbar ul a {
+.nav-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,9 +103,10 @@ body {
   
 }
 
-.navbar ul a img {
+.nav-img {
   margin: 0;
   padding-right: 7px;
+  padding-bottom: 2px;
 }
 
 .nav-text {
@@ -107,6 +115,131 @@ body {
   margin: 0;
 }
 
+.slider {
+}
+
 .video {
-  margin-left: 10px;
+  margin-left: 9px;
+}
+
+.slider-text {
+  font-size: 63px;
+  letter-spacing: 1px;
+  color: #f5c506;
+  font-family: "Asap", 'Segoe UI', Verdana, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 73px 0px 0 44px;
+}
+
+.slider-text-2 {
+  color: #ffffff;
+  letter-spacing: 0px;
+}
+
+.slider-ctrl {
+  position: absolute;
+  top: 299px;
+  padding: 0;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.slider-ctrl-left {
+  left: 0;
+}
+
+.slider-ctrl-right {
+  right: 0;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 212px;
+  width: 340px;
+  text-align: center;
+  border-left: 1px solid #cccccc;
+}
+
+.advantages:last-child {
+  border-right: 1px solid #cccccc;
+}
+
+.advantages-img {
+  margin: 0 0px 14px;
+}
+
+.advantages-text {
+  margin: 0 0 33px;
+  font-size: 27px;
+  letter-spacing: 0px;
+  font-family: "Segoe UI";
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.twit-wrapper {
+  height: 506px;
+  color: #ffffff;
+  background-image: url(assets/images/slider_2_bckgrnd.svg);
+  background-size: cover;
+}
+
+.twit {
+}
+
+.twit-heading {
+  font-size: 37px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "Asap", 'Segoe UI', Verdana, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 33px 0px 35px;
+}
+
+.twit-text {
+  width: 340px;
+  font-size: 29px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Asap", 'Segoe UI', Verdana, sans-serif;
+  font-weight: 300;
+  background-color: #ec9e03;
+  
+}
+
+.twit-count {
+  font-size: 25px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Segoe WP";
+  font-weight: 300;
+}
+
+.twit-date {
+  width: 112px;
+  font-size: 51px;
+  letter-spacing: 1px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  text-align: center;
+}
+
+.twit-month {
+  font-size: 21px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #b26529;
+  font-family: "Segoe UI";
+  font-weight: normal;
+  text-transform: uppercase;
 }

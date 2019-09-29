@@ -9,36 +9,69 @@
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <div class="wrapper">
+  <div class="head-wrapper">
     <header class="header">
-      <div class="logo">
-        <img class="img logo-back" src="assets/images/logo_back.svg" alt="logo" />
-        <img class="img logo-front" src="assets/images/logo_front.svg" alt="logo" />
+      <a class="logo" href="#">
+        <img class="logo-img logo-back" src="assets/images/logo_back.svg" alt="logo" />
+        <img class="logo-img logo-front" src="assets/images/logo_front.svg" alt="logo" />
         <span class="logo-text">theyalow</span>
-      </div>
-      <nav class="navbar">
-        <ul>
-          <li><a clacc="nav-first-wide" href="#"><img src="assets/images/nav_about.svg" alt="logo" />
+      </a>
+      <h1>Theyalow</h1>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a class="nav-link" href="#"><img class="nav-img" src="assets/images/nav_about.svg" alt="logo" />
             <span class="nav-text">about us</span>
           </a></li>
-          <li><a href="#"><img src="assets/images/nav_services.svg" alt="logo" />
+          <li class="nav-list-item">
+            <a class="nav-link" href="#"><img class="nav-img" src="assets/images/nav_services.svg" alt="logo" />
             <span class="nav-text">services</span>
           </a></li>
-          <li><a href="#"><img src="assets/images/nav_contact.svg" alt="logo" />
+          <li class="nav-list-item">
+            <a class="nav-link" href="#"><img class="nav-img" src="assets/images/nav_contact.svg" alt="logo" />
             <span class="nav-text">contact</span>
           </a></li>
         </ul>
       </nav>
-      
-    </header> <!-- wrapper - end -->
-    <div class="main">
+    </header>
+    <section class="slider">
       <video class="video" poster="assets/images/player.jpg"></video>
-      <p class="main-slider-text-1">the cool</p>
-      <p class="main-slider-text-2">the minimal</p>
-    </div> <!-- main - end -->
-    <div class="footer">
+      <p class="slider-text">the cool<br><span class="slider-text-2">the minimal</span></p>
+    </section> 
+    <button class="slider-ctrl slider-ctrl-left">
+      <img src="assets/images/slider_ctrl_left.svg" alt="slider_ctrl" />
+    </button> <!-- slider ends -->
+    <button class="slider-ctrl slider-ctrl-right">
+      <img src="assets/images/slider_ctrl_right.svg" alt="slider_ctrl" />
+    </button>
+  </div> <!-- head-wrapper ends -->
+  <section class="advantages-wrapper">
+    <div class="advantages">
+      <img class="advantages-img" src="assets/images/advantages_better_design.svg" alt="advantages" />
+      <p class="advantages-text">better design</p>
+    </div>
+    <div class="advantages">
+      <img class="advantages-img" src="assets/images/advantages_customize.svg" alt="advantages" />
+      <p class="advantages-text">customize</p>
+    </div>
+    <div class="advantages">
+      <img class="advantages-img" src="assets/images/advantages_its_free.svg" alt="advantages" />
+      <p class="advantages-text">its free</p>
+    </div>
+  </section> <!-- advantages-wrapper ends -->
+  <section class="twit-wrapper">
+    <div class="twit">
+      <h2 class="twit-heading">Lorem ipsum dolor sit amet</h2>
+      <p class="twit-text">Lorem ipsum dolor sit amet, consectetur adispicing elit, 
+                                    sed do eiusmod tempor inci&shy;didunt ut</p>
+      <img class="twit-video" src="assets/images/advantages_its_free.svg" alt="video-2" />
+      <img class="twit-img" src="assets/images/advantages_its_free.svg" alt="tweeter-img" />
+      <p class="twit-count">22</p>
+      <p class="twit-date">25<br><span class="twit-month">april</span></p>
+    </div>
+  </section>
+  <footer class="footer">
       
-    </div> <!-- footer - end -->
-  </div>
+  </footer> <!-- footer ends -->
 </body>
 </html>
