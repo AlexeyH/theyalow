@@ -11,10 +11,10 @@
 <body>
   <div class="head-wrapper">
     <header class="header">
-      <a class="logo" href="#">
-        <img class="logo-img logo-back" src="assets/images/logo_back.svg" alt="logo" />
-        <img class="logo-img logo-front" src="assets/images/logo_front.svg" alt="logo" />
-        <span class="logo-text">theyalow</span>
+      <a class="header-logo" href="#">
+        <img class="header-logo-img header-logo-back" src="assets/images/logo_back.svg" alt="logo" />
+        <img class="header-logo-img header-logo-front" src="assets/images/logo_front.svg" alt="logo" />
+        <span class="header-logo-text">theyalow</span>
       </a>
       <h1>Theyalow</h1>
       <nav class="nav">
@@ -62,16 +62,51 @@
   <section class="twit-wrapper">
     <div class="twit">
       <h2 class="twit-heading">Lorem ipsum dolor sit amet</h2>
-      <p class="twit-text">Lorem ipsum dolor sit amet, consectetur adispicing elit, 
-                                    sed do eiusmod tempor inci&shy;didunt ut</p>
-      <img class="twit-video" src="assets/images/advantages_its_free.svg" alt="video-2" />
-      <img class="twit-img" src="assets/images/advantages_its_free.svg" alt="tweeter-img" />
-      <p class="twit-count">22</p>
+      <div class="twit-flex-wrapper">
+        <p class="twit-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                              sed do eiusmod tempor inci&shy;didunt ut
+                              <a class="twit-plus" href="#">+</a></p>
+        
+        <img class="twit-video" src="assets/images/twit-video.svg" alt="twit-video" />
+        <div class="twit-img-wrapper">
+          <img class="twit-img" src="assets/images/twit-img.svg" alt="tweeter-img" />
+          <span class="twit-count">22</span>
+          <a class="twit-plus twit-img-plus" href="#">+</a>
+        </div>
+      </div> <!-- twit-flex-wrapper ends -->
       <p class="twit-date">25<br><span class="twit-month">april</span></p>
+      <div class="twit-slider-control">
+        <img src="assets/images/twit_slider_control.svg" alt="twit_slider_control">
+      </div>
+      
     </div>
   </section>
-  <footer class="footer">
-      
-  </footer> <!-- footer ends -->
+  <section class="responsive-view-wrapper">
+    <div class="responsive-view-wrapper-2">
+      <h2 class="responsive-view-heading">Lorem ipsum dolor sit amet</h2>
+      <div class="responsive-view-flex-wrapper">
+        <img class="responsive-view-img" src="assets/images/responsive_view_devices.svg" alt="responsive-view-devices">
+        <div class="responsive-view-sticker-free-wrapper">
+          <span class="responsive-view-sticker-free">its 100% free</span>
+        </div>
+        <ul class="responsive-view-list">
+          <li class="responsive-view-list-element">Sed ut perspiciatis unde omnis</li>
+          <li class="responsive-view-list-element">Lorem ipsum dolor sit amet con&shy;sectetur adipisicing</li>
+          <li class="responsive-view-list-element">Sed ut perspiciatis unde omnis</li>
+          <li class="responsive-view-list-element">Lorem ipsum dolor sit amet con&shy;sectetur adipisicing</li>
+        </ul>
+      </div>
+    </div>
+    
+  </section>
+  <div class="footer-wrapper">
+    <footer class="footer">
+      <a class="footer-logo" href="#">
+        <img class="footer-logo-img footer-logo-back" src="assets/images/logo_back.svg" alt="logo" />
+        <img class="footer-logo-img footer-logo-front" src="assets/images/logo_front.svg" alt="logo" />
+        <span class="footer-logo-text">theyalow</span>
+      </a>
+   </footer> <!-- footer ends -->
+  </div>
 </body>
 </html>

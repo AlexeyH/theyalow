@@ -1,5 +1,4 @@
 body {
-  /* width: 1300px; */
   width: 100%;
 }
 
@@ -11,7 +10,7 @@ h1 {
   position: relative;
   height: 566px;
   color: #fff;
-  background-image: url(assets/images/header_back.svg);
+  background-image: url(assets/images/header_back.jpg);
   background-size: cover;
   background-repeat: repeat no-repeat;
 }
@@ -19,7 +18,8 @@ h1 {
 .header,
 .slider,
 .advantages-wrapper,
-.twit,
+.twit-flex-wrapper,
+.responsive-view-flex-wrapper,
 .footer {
   display: flex;
   width: 1020px;
@@ -32,7 +32,7 @@ h1 {
   justify-content: space-between;
 }
 
-.logo {
+.header-logo {
   position: relative;
   margin-top: 29px;
   padding: 0;
@@ -45,16 +45,16 @@ h1 {
   text-decoration: none;
 }
 
-.logo-img {
+.header-logo-img {
   width: 79px;
   height: 80px;
 }
 
-.logo-back {
+.header-logo-back {
   margin: 0 0 0 1px;
 }
 
-.logo-front {
+.header-logo-front {
   position: absolute;
   top: -2px;
   left: -2px;
@@ -62,7 +62,7 @@ h1 {
   height: 85px;
 }
 
-.logo-text {
+.header-logo-text {
   display: inline-block;
   vertical-align: top;
   margin: 0;
@@ -93,7 +93,6 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 41px;
-  /* line-height: 41px; */
   margin: 0;
   padding: 0px 18px 0 18px;
   color: #9b7d08;
@@ -113,9 +112,6 @@ h1 {
   display: inline-block;
   vertical-align: top;
   margin: 0;
-}
-
-.slider {
 }
 
 .video {
@@ -183,27 +179,33 @@ h1 {
 }
 
 .twit-wrapper {
-  height: 506px;
+  height: 508px;
   color: #ffffff;
-  background-image: url(assets/images/slider_2_bckgrnd.svg);
+  background-image: url(assets/images/slider_2_back.svg);
   background-size: cover;
 }
 
 .twit {
+  width: 1020px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .twit-heading {
-  font-size: 37px;
+  font-size: 36px;
   letter-spacing: 0px;
   color: #ffffff;
   font-family: "Asap", 'Segoe UI', Verdana, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 33px 0px 35px;
+  margin: 0px 0px 35px;
+  padding-top: 34px;
 }
 
 .twit-text {
-  width: 340px;
+  flex-shrink: 0;
+  position: relative;
+  width: 280px;
   font-size: 29px;
   letter-spacing: 0px;
   line-height: 38px;
@@ -211,10 +213,39 @@ h1 {
   font-family: "Asap", 'Segoe UI', Verdana, sans-serif;
   font-weight: 300;
   background-color: #ec9e03;
-  
+  padding: 15px 30px 27px;
+  margin: 0;
+}
+
+.twit-plus {
+  position: absolute;
+  right: 12px;
+  bottom: 0px;
+  font-size: 23px;
+  font-weight: 1000;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.twit-img-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  height: 232px;
+  width: 329px;
+  margin-left: 34px;
+  background-color: #ec9e03;
+}
+
+.twit-img {
+  position: absolute;
+  top: 24%;
+  left: 23%;
 }
 
 .twit-count {
+  position: absolute;
+  top: 4%;
+  right: 6%;
   font-size: 25px;
   letter-spacing: 0px;
   line-height: 38px;
@@ -223,15 +254,23 @@ h1 {
   font-weight: 300;
 }
 
+.twit-img-plus {
+  right: 8px;
+  bottom: 4px;
+}
+
 .twit-date {
   width: 112px;
   font-size: 51px;
   letter-spacing: 1px;
-  line-height: 38px;
+  line-height: 25px;
   color: #ffffff;
+  background-color: #ddb101;
   font-family: "Segoe UI";
   font-weight: bold;
   text-align: center;
+  margin: 0;
+  padding-top: 20px;
 }
 
 .twit-month {
@@ -242,4 +281,138 @@ h1 {
   font-family: "Segoe UI";
   font-weight: normal;
   text-transform: uppercase;
+}
+
+.twit-slider-control {
+  padding-left: 70px;
+  padding-top: 40px;
+}
+
+.responsive-view-wrapper {
+  height: 498px;
+  background-image: url(assets/images/responsive_view_back.png);
+  background-size: cover;
+}
+
+.responsive-view-wrapper-2 {
+  width: 1020px;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.responsive-view-heading {
+  font-size: 42px;
+  letter-spacing: 0px;
+  color: #f5c506;
+  font-family: "PT Sans", "Asap", 'Segoe UI', Verdana, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.responsive-view-flex-wrapper {
+  position: relative;
+}
+
+.responsive-view-img {
+  padding: 49px 0 0 17px;
+}
+
+.responsive-view-sticker-free-wrapper {
+  position: absolute;
+  top: 6px;
+  left: -1px;
+  height: 116px;
+  width: 116px;
+  background-color: #f5c506;
+  border-radius: 100%;
+}
+
+.responsive-view-sticker-free {
+  position: absolute;
+  top: 52px;
+  left: 6px;
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "PT Sans Narrow", "PT Sans", "Asap", 'Segoe UI', Verdana, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.responsive-view-list {
+  width: 352px;
+  height: 45px;
+  font-size: 23px;
+  letter-spacing: 0px;
+  color: #a9a9a7;
+  font-family: "PT Sans", "Asap", 'Segoe UI', Verdana, sans-serif;
+  font-weight: 400;
+  padding: 71px 0 0 114px;
+}
+
+.responsive-view-list-element {
+  position: relative;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.responsive-view-list-element:before {
+  position: absolute;
+  top: -23px;
+  left: -37px;
+  color: #f5c506;
+  content: "•";
+  padding-right: 14px;
+  font-size: 55px;
+ }
+
+.footer-wrapper {
+  position: relative;
+  background-color: #4c4c4c;
+  box-shadow: 0px -2px 5px #000;
+}
+ 
+ .footer {
+  height: 63px;
+}
+
+.footer-logo {
+  position: relative;
+  padding: 0;
+  font-size: 29px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: 'Segoe UI', Verdana, sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-logo-img {
+  width: 52px;
+  height: 52px;
+}
+
+.footer-logo-back {
+  margin: 5px 0 0 0px;
+}
+
+.footer-logo-front {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 54px;
+  height: 54px;
+}
+
+.footer-logo-text {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 15px;
+  padding-left: 1px;
+  letter-spacing: 2px;
 }
